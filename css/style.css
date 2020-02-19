@@ -1,0 +1,616 @@
+*{
+	margin: 0px;
+	padding: 0px;
+  box-sizing: border-box;
+  font-family: Bitter;
+}
+
+html, body{
+	height: 100%;
+}
+
+.clear{
+  clear: both;
+}
+
+.center{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header{
+  padding: 0 2%;
+  width: 100%;
+  height: 60px;
+  /*background-color: #212343;*/
+  background-color: #041e35;
+}
+
+.logo{
+  padding-top: 60px;
+  width: 121px;
+  background-color: #ccc;
+}
+
+.container-banner{
+  width: 100%;
+  height: 457px;
+  background-image: url('../images/bg_hearder.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container-banner > .center{
+  height: 100%;
+}
+
+/*.form{
+  width: 400px;
+  padding: 25px;
+  height: calc(100% + 30px);
+  float: right;
+  position: relative;
+  top: -15px;
+  margin-right: 2%;
+  border: 8px solid rgba(120, 120, 120, 0.5);
+  background-color: white;
+  background-clip: padding-box;
+}
+
+.form h2{
+  font-size: 16px;
+  font-weight: normal;
+  color: #999999;
+}*/
+
+/*.input-container{
+  margin-top: 10px;
+}
+
+.input-container span, .form p{
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #BBBBBB;
+}
+
+.form p{
+  margin: 25px 0;
+}*/
+
+/*.input-container input {
+  width: 344px;
+  height: 40px;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.input-container input:focus{
+  outline: none;
+}
+
+.form .btEnviar{
+  text-align: center;
+}*/
+
+/*.form input[type=submit]{
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+  height: 65px;
+  margin-top: 10px;
+  background-color: #212343;
+  display: inline-block;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid #4A5097;
+  cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+  background-color: #323665;
+}*/
+
+.chamada{
+  padding: 30px;
+  margin-top: 80px;
+  margin-left: 10%;
+  width: 450px;
+  height: 250px;
+  float: left;
+  background-color: rgba(4, 30, 53, 0.7);
+  /*background-color: rgba(33,35,67,0.7);*/
+}
+
+.chamada ul{
+  list-style-position: inside;
+}
+
+.chamada ul li{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 2;
+  color: white;
+  margin-top: 18px;
+  margin-left: 5%;
+}
+
+/*========================================== section 2 Branca ==========================================*/
+
+.section-2{
+  font-size: 18px;
+  line-height: 2;
+  padding: 20px 2%;
+  text-align: center;
+  
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.section-2 .container-land{
+  /*padding: 0 2%;*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wraper-land{
+  width: 50%;
+  float: left;
+  padding-top: 30px;
+
+  /*height: 100%;*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  /*padding: 90px 5%;  */
+}
+.wraper-land h3{
+font-size: 20px;
+padding-bottom: 20px;
+}
+
+.wraper-land p{
+  font-size: 13px;
+  color: rgb(150, 150, 150); 
+}
+
+.container-sec2{
+  position: relative;
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.thumb1{
+  /*border: 5px solid white; */
+  width: 100%;
+  /*max-height: 400px;*/
+  /*height: 70vh;*/
+  min-height: 0px;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  display: block;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.thumb2{
+  border: 5px solid #041e35; 
+}
+
+.texto-thumb{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-sec2:hover .thumb1 {
+  opacity: 0.3;
+}
+
+.container-sec2:hover .texto-thumb {
+  opacity: 1;
+}
+
+.texto{
+  /*background-color: #4CAF50;*/
+  background-color: #041e35;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border: 2px solid rgba(200, 200, 200, 0.3);
+}
+/*.arrow{
+  position: relative;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/icon_arrow_down.png');
+  background-size: 100% 100%;
+  margin-left: -20px;
+}*/
+
+/*========================================== section 3 Azul - LandPages 3 e 4 ==========================================*/
+  .section-3{
+    font-size: 18px;
+    line-height: 2;
+    padding: 20px 2%;
+    text-align: center;
+    background-color: #041e35;
+    color: #e3e3e3;   
+  }
+  
+
+/*========================================== section 4 - Jogo de Plataforma ==========================================*/
+
+.section-4{
+  /*color: #462663;  */
+  /*background: white;*/
+  font-size: 18px;
+  line-height: 2;
+  padding: 20px 2%;
+  text-align: center;
+
+  color: white;
+  background: #041e35;
+  display: none;
+}
+
+.section-4 h2{
+  margin: 40px 0;
+}
+
+
+.section-4 p{
+  width: 80%;
+  text-align: justify;
+  margin: 0px auto 40px auto;
+}
+
+.section-4 .container{
+  float: left;
+  width: 50%;
+  min-height: 500px;
+}
+
+.section-4 .container p{
+  display: inline-block;
+  width: 90%;
+  max-width: 500px;
+  font-size: 15px; 
+  text-align: justify;
+}
+
+.section-4 .container img{
+  margin-top: 20px;
+  max-width: 500px;
+  width: 90%;
+}
+
+/*========================================== section 5 Azul - XP ==========================================*/
+
+.section-5{
+
+  /*color: #462663;  */
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  padding: 20px 2%;
+  text-align: center;
+  background-color: #041e35;
+  /*background: rgb(30,30,30);*/
+}
+
+.section-5 .container{
+  float: left;
+  width: 33.3%;
+  margin-top: 50px;
+  vertical-align: top;
+}
+
+.section-5 .container h4{
+  font-size: 12px;
+  max-width: 90%;
+  margin: 0 auto;
+  color: #ccc;
+  font-style: italic;
+}
+
+.section-5 .container p{
+  display: inline-block;
+  width: 100%;
+  /*width: 400px;*/
+  margin: 15px 0;
+  font-size: 13px;
+  padding: 0 40px;
+  text-align: justify;
+}
+
+.section-5 .container img{
+  width: 35%;
+  max-width: 170px;
+  border-radius: 50%;
+}
+
+
+/*========================================== Section 6 - Jogos desenvolvidos ==========================================*/
+
+.section-6{
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  padding: 20px 2%;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+}
+
+.section-6 .container{
+  float: left;
+  width: 33.3%;
+  margin-top: 50px;
+  vertical-align: top;
+}
+
+.section-6 .container p{
+  display: inline-block;
+  width: 100%;
+  /*width: 400px;*/
+  margin: 15px 0;
+  font-size: 15px;
+  padding: 0 40px;
+  text-align: justify;
+}
+
+.section-6 .container img{
+  width: 85%;
+  max-width: 380px;
+  border-radius: 0%;
+}
+
+.section-6 .container .img-9x16{
+  width: 30%;
+  max-width: 190px;
+  /*height: 250px;*/
+}
+
+/*========================================== Section 7 Contato ==========================================*/
+
+.section-7{
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  padding: 60px 2%;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  border-top: 2px solid #888888;
+}
+
+.section-7 .container{
+  float: left;
+  width: 33.3%;
+  vertical-align: top;
+}
+
+.section-7 a{
+  text-decoration: none;
+}
+
+.section-7 p{
+  text-decoration: none;
+  color: white;
+}
+
+/*========================================== footer ==========================================*/
+
+.footer{
+  padding: 30px 0;
+  border-top: 2px solid #888888;
+  text-align: center;
+  /*color: #888888;*/
+  color: white;
+  background: #041e35;  /*Azul*/
+  /*background: rgb(30,30,30);*/
+}
+
+.footer p{
+ margin-top: 8px;
+}
+
+
+
+
+/*========================================== Media Query 1024 ==========================================*/
+
+@media screen and (max-width: 1024px){
+  .header{
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-banner{
+    width: 100%;
+    padding: 40px 2%;
+    height: auto;
+    text-align: center;
+  }
+ /* .form{
+    margin-top: 30px;
+    max-width: 400px;
+    width: 60%;
+    padding: 10px;
+    height: calc(100% + 30px);
+    float: right;
+    top: 0;
+  }*/
+
+  .chamada{
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    padding: 30px 10px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 2%;
+  }
+
+  .wraper-land{
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .section-4 .container{
+    min-height: 455px;
+  }
+}
+
+/*========================================== Media Query 900 ==========================================*/
+
+@media screen and (max-width: 900px){
+    .chamada{
+    margin-top: 0;
+    max-width: 400px;
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .section-4 p{
+    margin: 40px auto;
+  }
+
+  .section-4 .container{
+     width: 100%;
+  }
+
+  .section-4 .container p{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .section-5 .container{
+    width: 100%;
+  }
+
+  .section-5 .container p{
+    width: 70%;
+    padding: 0 40px;
+  }
+
+  .section-5 .container img{
+    width: 18%;
+  }
+
+  .section-6 .container{
+     width: 100%;
+  }
+
+  .section-6 .container p{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .section-6 .container img{
+    width: 55%;
+  }
+
+  .section-6 .container .img-9x16{
+    width: 30%;
+  }
+
+}
+
+/*========================================== Media Query 768 ==========================================*/
+
+@media screen and (max-width: 768px){
+
+  .section-4 > .container p{
+    width: 95%;
+  }
+
+/*  .form{
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }*/
+
+/*  .chamada{
+    margin-top: 0;
+    max-width: 400px;
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }*/
+
+  .section-5 .container p{
+    width: 90%;
+  }
+
+  .section-5 .container img{
+    width: 20%;
+  }
+
+  .section-6 .container img{
+    width: 75%;
+  }
+
+  .section-7{
+    padding: 20px 2%;
+  }
+  .section-7 .container{
+    width: 100%;
+    margin: 25px 0;
+  }
+
+}
+
+/*========================================== Media Query 500 ==========================================*/
+
+@media screen and (max-width: 500px){
+  .section-4 h2{
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .section-4 p{
+    width: 90%;
+    font-size: 14px;
+    margin: 20px auto 10px auto;
+  }
+
+  .section-4 .container{
+    min-height: 250px;
+  }
+
+  .section-4 .container p{
+    font-size: 14px;
+  }
+
+  .section-5 .container p{
+    width: 100%;
+  }
+
+  .section-6 .container img{
+    width: 85%;
+  }
+
+  .section-6 .container .img-9x16{
+    width: 45%;
+  }
+
+}
+
+
