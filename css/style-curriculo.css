@@ -37,7 +37,7 @@
   font-size:13px;
   text-decoration:none;
   font-weight:400;
-  font-family:'Open Sans'
+  font-family:'Open Sans',"Times New Roman", Times, serif;
 }
 
 #index-nav ul, #index-nav li{

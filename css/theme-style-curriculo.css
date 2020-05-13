@@ -1,11 +1,4 @@
-
-audio:not([controls]){
-  display:none;
-  height:0
-}
-
 html{
-  font-size:100%;
   overflow-y:scroll;
   -webkit-text-size-adjust:100%;
   -ms-text-size-adjust:100%;
@@ -14,7 +7,11 @@ html{
 }
 
 body{
-  margin:0
+	background-color:#f3f3f3;
+	font-family: 'sans-serif',"Times New Roman", Times, serif;
+	font-size:1.6rem;
+	color:#282828;
+	margin:0
 }
 
 a:focus{
@@ -126,14 +123,6 @@ table{
 
 html{
 	font-size:62.5%
-}
-
-body{
-	background-color:#f3f3f3;
-	font-family:"Source Sans Pro", sans-serif;
-	font-size:1.6rem;
-	color:#282828;
-	margin:0
 }
 
 section{
@@ -364,12 +353,6 @@ header,footer,main{
 
 .languages .subtitle{
 	font-size:1.6rem
-}
-
-.languages .language{
-	margin-bottom:2em;
-	display:block;
-	overflow:hidden
 }
 
 .languages .level{
