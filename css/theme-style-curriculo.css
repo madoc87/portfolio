@@ -267,8 +267,6 @@ header,footer,main{
 	font-weight:600;
 	font-size:1.3rem;
 	padding:0 .3em;
-	/*text-transform:lowercase;*/
-	/*text-transform:capitalize;*/
 }
 
 .curriculum .item{
@@ -453,13 +451,6 @@ header,footer,main{
   }
 }
 
-/*.share .facebook a{
-	background-color:#3b579d
-}
-.share .twitter a{
-	background-color:#00aced}
-.share .linkedin a{background-color:#1683bc}*/
-
 @media print{
 
 	html{
@@ -567,28 +558,3 @@ header,footer,main{
 		display:none !important
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
