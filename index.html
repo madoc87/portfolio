@@ -10,7 +10,6 @@
 		<meta name="description" content="Portfólio com alguns sites de exemplo desenvolvidos, alguns jogos criados, dados para contato, redes sociais e currículo." />
 		<link rel="shortcut icon" href="images/favicon.png" />
 
-		
 	<!-- Meta Open Graph -->
 		<meta property="og:title" content='Fabricio Assis | Programador de formação, gerente por experiência.' />
 		<meta property="og:description" content="Portfólio com alguns sites de exemplo desenvolvidos, alguns jogos criados, dados para contato, redes sociais e currículo." />
@@ -25,8 +24,7 @@
 
 		<meta name="twitter:card" content="summary_large_image">
 
-		<meta name = "image" property = "og: image" content = "images/thumb-portfolio.png" >
-		<meta name = "image" property = "og: image" content = "https://madoc87.github.io/portfolio/images/thumb-portfolio.png" >
+		<meta name = "image" property = "og: image" content = "https://madoc87.github.io/portfolio/images/thumb-portfolio.webp" >
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
@@ -146,7 +144,9 @@
 			<h2>Jogos desenvolvidos</h2>
 
 			<div class="container">
-				<img alt="Gif Infinity Run" src="images/gifs/InfinityRun.gif">
+				<a onclick="playStop('InfinityRun');">
+					<img alt="Gif Infinity Run" id="InfinityRun" src="images/gifs/InfinityRun-thumb.png">
+				</a>
 				<h3>Infinity Run</h3>
 				<p>
 					Jogo de corrida infinita, onde o player corre em uma unica direção automaticamente restando ao jogador dois comandos, pular e atirar. A pontuação é contada pelo tempo que o jogador permanece vivo e pelo numero e tipo de inimigos que o mesmo mata. As plataformas são geradas proceduralmentes, com variação de distancia dificultando a gameplay. Existem inimigos diferentes que tem aparencia e velocidades diferentes, todos gerados em tempos e posições diferentes, cada tipo de inimigo tendo uma pontuação propria. Ao ser atingido por um inimigo o player perde uma vida, chegando a zero morrendo e sendo aberto o menu para que possa reiniciar a partida. Comandos do jogo sendo apartir do teclado mas tambem adaptado para telas touch screen.
@@ -154,7 +154,9 @@
 			</div><!-- container -->
 
 			<div class="container">
-					 <img alt="Gif Game Platforma" src="images/gifs/GamePlatformer.gif">
+				<a onclick="playStop('GamePlatformer');">
+					<img alt="Gif Game Platforma" id="GamePlatformer" src="images/gifs/GamePlatformer-thumb.png">
+				</a>
 				<h3>Jogo de Plataforma</h3>
 				<p>
 					Jogo de plataforma com mecanicas de compra de itens e equipamentos, inimigos que atacam apenas quando o player entra no alcance do ataque, como o lobo que tem um ataque corpo a corpo tendo que chegar bem proximo para o mesmo executar o ataque, enquanto que o dragão lança bolas de fogo inicia seu ataque com o player ainda distante. Comandos inicalmente no teclado, mas adaptado para telas touch screen.
@@ -162,7 +164,9 @@
 			</div><!-- container -->
 
 			<div class="container">
-				<img class="img-9x16" alt="Gif Fruit Ninja Clone" src="images/gifs/FruitNinja.gif">
+				<a onclick="playStop('FruitNinja');">
+					<img class="img-9x16" alt="Gif Fruit Ninja Clone" id="FruitNinja" src="images/gifs/FruitNinja-thumb.png">
+				</a>
 				<h3>Fruit Ninja Clone</h3>
 				<p>
 					Um clone do popular jogo Fruit Ninja, cenario 3D, com frutas sendo geradas com variação de força e direção, com corte sendo gerado com a movimentação rapida do mouse, fazendo o corte na fruta apenas se acertada com a lamina. Proxima implementação ao jogo será pontuação e lançamentos de bombas que iram explodir caso seja acertadas com a lamina, fazendo o player perder uma vida, chegando a zero exibindo a tela de fim de jogo.
@@ -242,5 +246,8 @@
 			<p>Todos os direitos reservados</p>
 			<p>Fabricio Assis - Brasília - DF</p>
 		</div><!-- footer -->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/animacao.js"></script>
 	</body>
 </html>
