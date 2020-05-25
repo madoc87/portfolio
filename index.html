@@ -30,19 +30,19 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
 	</head>
 
 	<body>
 		<div class="header">
-			<div class="center">
-			</div><!-- Center -->
 		</div><!-- Header -->
 		
 		<div class="container-banner">
-			<div class="center">
-				<div>
+			<div class="container">
+				<div class="container2">
+
 					<div class="chamada">
 						<ul>
 							<li>Desenvolvedor Fonrt-End</li>
@@ -50,16 +50,32 @@
 							<li>Desenvolvedor de Jogos</li>
 						</ul>
 					</div><!-- chamada -->
-				</div>
+				
 
-				<div class="clear"></div>
-			</div><!-- center -->
+
+
+					<div class="chamada2">
+						<ul>
+							<li>Design responsivo</li>
+							<li>Otimização de imagens</li>
+							<li>SonarQube para otimização do código</li>
+							<li>Pontuação perfeita no Google PageSpeed Insights</li>
+						</ul>
+					</div><!-- chamada2 -->
+
+
+
+
+				</div><!-- container2 -->
+			</div><!-- container -->
+			<div class="clear"></div>
 		</div><!-- container-banner -->
+				
 
 		<section class="section-2">
-			<h2>Sites desenvolvidos como exemplo</h2>
-			<p>Design responsivo, otimização de imagens, pontuação perfeita no Google PageSpeed Insights, utilizado SonarQube para otimização do código</p>
 
+			<h2>Sites desenvolvidos como exemplo com</h2>			
+			
 			<div class="container-land">
 				<div class="wraper-land">
 					<h3>Landing Page 1 - Portfólio programador</h3>
@@ -219,15 +235,15 @@
 
 			<div class="container">
 				<a href="https://github.com/madoc87" target="_blank" rel="noopener noreferrer">
-					<em class="fa fa-github"  style="color: white; font-size: 38px;"></em>
-
+					<em class="fab fa-github" aria-hidden="true" style="color: white; font-size: 38px;"></em>
+					 
 					<p>madoc87</p>
 				</a>
 			</div><!-- container -->		
 			
 			<div class="container">
 				<a href="https://www.linkedin.com/in/fabricio-assis/" target="_blank" rel="noopener noreferrer">
-					<em class="fa fa-linkedin-square" style="color: white; font-size: 38px;"></em>
+					<em class="fab fa-linkedin" style="color: white; font-size: 38px;"></em>
 					<p>fabricio-assis</p>
 				</a>
 			 </div><!-- container -->
@@ -248,7 +264,16 @@
 			<p>Fabricio Assis - Brasília - DF</p>
 		</div><!-- footer -->
 
-		<script src="js/jquery.js"></script>
-		<script src="js/animacao.js"></script>
+		<script>
+			function playStop(name){
+				if (document.getElementById(name).src.indexOf('animated')==-1){
+					document.getElementById(name).src="images/gifs/"+name+"-animated.gif";
+				}
+				else {
+					document.getElementById(name).src="images/gifs/"+name+"-thumb.webp";
+				}
+			}
+	</script>
+
 	</body>
 </html>

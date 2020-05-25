@@ -44,14 +44,22 @@ html, body{
   height: 100%;
 }
 
-.chamada{
-  padding: 30px;
-  margin-top: 80px;
-  margin-left: 10%;
-  width: 450px;
-  height: 250px;
-  float: left;
+.container{
+  padding-top:  5%;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.container2{
   background-color: rgba(4, 30, 53, 0.7);
+  height: 250px;
+  padding: 30px;
+}
+
+.chamada{
+  width: 500px;
+  height: 200px;
+  float: left;
 }
 
 .chamada ul{
@@ -67,13 +75,32 @@ html, body{
   margin-top: 18px;
   margin-left: 5%;
 }
+
+.chamada2{
+  width: 500px;
+  height: 200px;
+  float: right;
+}
+
+.chamada2 ul{
+    list-style-position: inside;
+}
+
+.chamada2 ul li{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 2;
+  color: white;
+  padding-top: 10px;
+}
+
 /*========================================== section 2 Branca ==========================================*/
 .section-2{
   font-size: 18px;
   line-height: 2;
   padding: 20px 2%;
   text-align: center;
-  
   background-color: rgb(30, 30, 30);
   color: white;
 }
