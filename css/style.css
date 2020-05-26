@@ -38,62 +38,87 @@ html, body{
   background-image: url('../images/bg_hearder.webp');
   background-size: cover;
   background-position: center;
+
+  color: white;
+  display: flex;
 }
 
 .container-banner > .center{
   height: 100%;
 }
 
-.container{
-  padding-top:  5%;
-  max-width: 60%;
-  margin: 0 auto;
+.container-h{
+  width: 50%;
 }
 
-.container2{
-  background-color: rgba(4, 30, 53, 0.7);
-  height: 250px;
-  padding: 30px;
+.container-h2{
+  width: 50%;
 }
 
 .chamada{
-  width: 500px;
-  height: 200px;
-  float: left;
+  height: 250px;
+  max-width: 500px;
+  margin-top: 90px;
+  margin-left: 30%;
+  background-color: rgba(4, 30, 53, 0.7);
+  padding: 5% 12%;
 }
 
 .chamada ul{
-  list-style-position: inside;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 2;
 }
 
 .chamada ul li{
-  font-size: 18px;
-  font-weight: 600;
-  text-align: left;
-  line-height: 2;
-  color: white;
-  margin-top: 18px;
-  margin-left: 5%;
+  margin-left: 15px;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
 .chamada2{
-  width: 500px;
-  height: 200px;
-  float: right;
+  height: 250px;
+  max-width: 500px;
+  margin-top: 90px;
+  background-color: rgba(4, 30, 53, 0.7);
+  margin-right: 30%;
+  padding: 2% 3%;
 }
 
 .chamada2 ul{
-    list-style-position: inside;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 2;
 }
 
 .chamada2 ul li{
-  font-size: 18px;
-  font-weight: 600;
-  text-align: left;
-  line-height: 2;
-  color: white;
-  padding-top: 10px;
+  margin-left: 15px;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
+
+ .header-mobile{
+  display: none;
+  padding: 30px;
+  margin: 0 auto;
+  width: 500px;
+  float: left;
+  background-color: rgba(4, 30, 53, 0.7);
+ }
+
+ .header-mobile ul{
+  list-style-position: inside;
+ }
+
+ .header-mobile li{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 18px;
+  margin-left: 5%;
+ }
 
 /*========================================== section 2 Branca ==========================================*/
 .section-2{
@@ -337,6 +362,12 @@ padding-bottom: 20px;
 .footer p{
  margin-top: 8px;
 }
+/*========================================== Media Query 1100 ==========================================*/
+@media screen and (max-width: 1100px){
+  .chamada ul, .chamada2 ul{
+    font-size: 17px;
+  }
+}
 /*========================================== Media Query 1024 ==========================================*/
 @media screen and (max-width: 1024px){
   .header{
@@ -344,23 +375,19 @@ padding-bottom: 20px;
     width: 100%;
     text-align: center;
   }
-
   .container-banner{
     width: 100%;
     padding: 40px 2%;
     height: auto;
-    text-align: center;
+  }
+  
+  .container-h, .container-h2{
+  display: none;
   }
 
-  .chamada{
-    width: 40%;
-    max-width: 500px;
-    height: auto;
-    padding: 30px 10px;
-    float: left;
-    margin-top: 35px;
-    margin-left: 2%;
-  }
+ .header-mobile{
+  display: block;
+ }
 
   .wraper-land{
     width: 100%;
@@ -373,13 +400,6 @@ padding-bottom: 20px;
 }
 /*========================================== Media Query 900 ==========================================*/
 @media screen and (max-width: 900px){
-    .chamada{
-    margin-top: 0;
-    max-width: 400px;
-    float: none;
-    display: inline-block;
-    width: 100%;
-  }
 
   .section-4 p{
     margin: 40px auto;
@@ -455,6 +475,13 @@ padding-bottom: 20px;
 }
 /*========================================== Media Query 500 ==========================================*/
 @media screen and (max-width: 500px){
+
+ .header-mobile li{
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 200;
+ }
+ 
   .section-4 h2{
     font-size: 20px;
     margin: 0;
