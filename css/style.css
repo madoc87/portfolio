@@ -3,7 +3,7 @@
 	padding: 0px;
   box-sizing: border-box;
   font-family: 'Bitter',"Times New Roman", Times, serif;}
-}
+
 
 html, body{
 	height: 100%;
@@ -120,6 +120,9 @@ html, body{
   margin-left: 5%;
  }
 
+ .espaco{
+  margin: 10px;
+ }
 /*========================================== section 2 Branca ==========================================*/
 .section-2{
   font-size: 18px;
