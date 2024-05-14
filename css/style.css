@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: 'Bitter',"Times New Roman", Times, serif;}
 
+:root {
+  --bg-blue: #041e35;
+  --bg-blue-70: #041e35b3;
+  --bg-blue-mobile: rgba(4, 30, 53, 0.85);
+  --bg-gray: #1e1e1e;
+}
 
 html, body{
 	height: 100%;
@@ -23,7 +29,7 @@ html, body{
   padding: 0 2%;
   width: 100%;
   height: 60px;
-  background-color: #041e35;
+  background-color: var(--bg-blue);
 }
 
 .logo{
@@ -60,7 +66,7 @@ html, body{
   max-width: 500px;
   margin-top: 90px;
   margin-left: 30%;
-  background-color: rgba(4, 30, 53, 0.7);
+  background-color: var(--bg-blue-70);
   padding: 5% 12%;
 }
 
@@ -81,7 +87,7 @@ html, body{
   height: 250px;
   max-width: 500px;
   margin-top: 90px;
-  background-color: rgba(4, 30, 53, 0.7);
+  background-color: var(--bg-blue-70);
   margin-right: 30%;
   padding: 2% 3%;
 }
@@ -105,7 +111,7 @@ html, body{
   margin: 0 auto;
   width: 500px;
   float: left;
-  background-color: rgba(4, 30, 53, 0.7);
+  background-color: var(--bg-blue-70);
  }
 
  .header-mobile ul{
@@ -129,7 +135,7 @@ html, body{
   line-height: 2;
   padding: 20px 2%;
   text-align: center;
-  background-color: rgb(30, 30, 30);
+  background-color: var(--bg-gray);
   color: white;
 }
 
@@ -148,9 +154,9 @@ font-size: 20px;
 padding-bottom: 20px;
 }
 
-.wraper-land p{
+.wraper-land p, .legenda, .legenda-zoom{
   font-size: 13px;
-  color: rgb(150, 150, 150); 
+  color: #969696; 
 }
 
 .container-sec2{
@@ -174,7 +180,7 @@ padding-bottom: 20px;
 }
 
 .thumb2{
-  border: 5px solid #041e35; 
+  border: 5px solid var(--bg-blue); 
 }
 
 .texto-thumb{
@@ -197,7 +203,7 @@ padding-bottom: 20px;
 }
 
 .texto{
-  background-color: #041e35;
+  background-color: var(--bg-blue);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -209,18 +215,18 @@ padding-bottom: 20px;
     line-height: 2;
     padding: 20px 2%;
     text-align: center;
-    background-color: #041e35;
+    background-color: var(--bg-gray);
     color: #e3e3e3;   
   }
 /*========================================== section 4 - Jogo de Plataforma ==========================================*/
 .section-4{
   font-size: 18px;
   line-height: 2;
-  padding: 20px 2%;
+  padding: 80px 2%;
   text-align: center;
 
   color: white;
-  background: #041e35;
+  background: var(--bg-blue);
   display: none;
 }
 
@@ -258,9 +264,9 @@ padding-bottom: 20px;
   color: white;
   font-size: 18px;
   line-height: 2;
-  padding: 20px 2%;
+  padding: 80px 2%;
   text-align: center;
-  background-color: #041e35;
+  background-color: var(--bg-blue);
 }
 
 .section-5 .container{
@@ -292,24 +298,99 @@ padding-bottom: 20px;
   max-width: 170px;
   border-radius: 50%;
 }
-/*========================================== Section 6 - Jogos desenvolvidos ==========================================*/
+/*========================================== Section 6 - Design desenvolvidos ==========================================*/
 .section-6{
   color: white;
   font-size: 18px;
   line-height: 2;
-  padding: 20px 2%;
+  padding: 80px 2%;
   text-align: center;
-  background-color: rgb(30, 30, 30);
+  background-color: var(--bg-blue);
 }
 
 .section-6 .container{
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+  /* vertical-align: top; */
+}
+
+.section-6 h3 {
+  margin: 50px 0 20px 0;
+
+}
+
+.imagem-ampliavel {
+  cursor: zoom-in;
+  width: 35vw;
+}
+
+
+.imagem-ampliavel.fullscreen {
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+  max-height: 85%;
+  z-index: 9997;
+  cursor: zoom-out;
+  width: auto;
+}
+
+.legenda-zoom, .botao-fechar {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  color:white; 
+}
+
+.legenda-zoom {
+  bottom: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.botao-fechar {
+  top: 15px;
+  right: 40px;
+  z-index: 9998;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9996;
+    display: none;
+}
+
+/*========================================== Section 8 - Jogos desenvolvidos ==========================================*/
+.section-8{
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  padding: 80px 2%;
+  text-align: center;
+  background-color: var(--bg-gray);
+}
+
+.section-8 .container{
   float: left;
   width: 33.3%;
   margin-top: 50px;
   vertical-align: top;
 }
 
-.section-6 .container p{
+.section-8 .container p{
   display: inline-block;
   width: 100%;
   margin: 15px 0;
@@ -318,13 +399,14 @@ padding-bottom: 20px;
   text-align: justify;
 }
 
-.section-6 .container img{
+.section-8 .container img{
   width: 85%;
   max-width: 380px;
   border-radius: 0%;
+  cursor: pointer;
 }
 
-.section-6 .container .img-9x16{
+.section-8 .container .img-9x16{
   width: 30%;
   max-width: 190px;
 }
@@ -335,7 +417,7 @@ padding-bottom: 20px;
   line-height: 2;
   padding: 60px 2%;
   text-align: center;
-  background-color: rgb(30, 30, 30);
+  background-color: var(--bg-gray);
   border-top: 2px solid #888888;
 }
 
@@ -347,6 +429,7 @@ padding-bottom: 20px;
 
 .section-7 a{
   text-decoration: none;
+  color: white;
 }
 
 .section-7 p{
@@ -359,7 +442,7 @@ padding-bottom: 20px;
   border-top: 2px solid #888888;
   text-align: center;
   color: white;
-  background: #041e35;  /*Azul*/
+  background: var(--bg-blue);  /*Azul*/
 }
 
 .footer p{
@@ -430,20 +513,20 @@ padding-bottom: 20px;
     width: 18%;
   }
 
-  .section-6 .container{
+  .section-8 .container{
      width: 100%;
   }
 
-  .section-6 .container p{
+  .section-8 .container p{
     max-width: 800px;
     margin: 0 auto;
   }
 
-  .section-6 .container img{
+  .section-8 .container img{
     width: 55%;
   }
 
-  .section-6 .container .img-9x16{
+  .section-8 .container .img-9x16{
     width: 30%;
   }
 
@@ -463,12 +546,12 @@ padding-bottom: 20px;
     width: 20%;
   }
 
-  .section-6 .container img{
+  .section-8 .container img{
     width: 75%;
   }
 
   .section-7{
-    padding: 20px 2%;
+    padding: 80px 2%;
   }
   .section-7 .container{
     width: 100%;
@@ -479,10 +562,22 @@ padding-bottom: 20px;
 /*========================================== Media Query 500 ==========================================*/
 @media screen and (max-width: 500px){
 
+  .header-mobile {
+    background-color: var(--bg-blue-mobile);
+  }
+
  .header-mobile li{
-  font-size: 15px;
-  line-height: 1.5;
-  font-weight: 200;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 200;
+ }
+
+ .section-2 h2 {
+  font-size: 24px;
+ }
+
+ .wraper-land h3 {
+  font-size: 16px;
  }
  
   .section-4 h2{
@@ -508,11 +603,28 @@ padding-bottom: 20px;
     width: 100%;
   }
 
-  .section-6 .container img{
+    .section-6 .container{
+    flex-direction: column;
+  }
+
+  .imagem-ampliavel.fullscreen {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .imagem-ampliavel {
+    width: 70vw;
+  }
+
+  .botao-fechar{
+    right: 10px;
+  }
+
+  .section-8 .container img{
     width: 85%;
   }
 
-  .section-6 .container .img-9x16{
+  .section-8 .container .img-9x16{
     width: 45%;
   }
 }

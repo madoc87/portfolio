@@ -28,7 +28,9 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+		<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    	<noscript><link rel="stylesheet" href="css/style.css"></noscript>
 	</head>
 
 	<body>
@@ -219,7 +221,7 @@
 <!-- ===================================== Section 5 ======================================================= -->
 <!-- ======================================================================================================= -->
 		
-		<section class="section-3"><!-- Inicio section-5 -->
+		<section class="section-3"><!-- Inicio section-5 (3) -->
 			<div class="container-land">
 				<div class="wraper-land">
 					<h3>Site WP - Reinvenção Digital</h3>
@@ -258,13 +260,75 @@
 
 			<div class="clear"></div>
 
-		</section><!-- Final section-3 -->
+		</section><!-- Final section-5 (3) -->
+
+
+
+
+
 
 <!-- ======================================================================================================= -->
 <!-- ===================================== Section 6 ======================================================= -->
 <!-- ======================================================================================================= -->
 
-		<section class="section-6"> <!-- Inicio section-6 -->
+		<section class="section-6"> <!-- Design desenvolvidos section-6 -->
+			<h2>Design desenvolvidos</h2>
+
+			<h3>Materiais Offilne</h3>
+			<div class="container">
+				<div>
+					<img class="imagem-ampliavel" alt="Imagem de duas filipetas frente verso com a arte criada" id="material-offline-1" src="images/design/material-offline-1_v2.webp">
+					<p class="legenda">Click na imagem para ampliar</p>
+				</div>
+				<div>
+					<img class="imagem-ampliavel" alt="Imagem de um outdoor com a arte criada" id="material-offline-2" src="images/design/material-offline-2_v2.webp">
+					<p class="legenda">Click na imagem para ampliar</p>
+				</div>
+			</div><!-- container -->
+
+
+			<h3>Materiais Onilne</h3>
+			<div class="container">
+				<div>
+					<img class="imagem-ampliavel" alt="Imagem de duas filipetas frente verso com a arte criada" id="material-offline-1" src="images/design/material-online-1_v2.webp">
+					<p class="legenda">Click na imagem para ampliar</p>
+				</div>
+
+				<div>
+					<img class="imagem-ampliavel" alt="Imagem de um outdoor com a arte criada" id="material-offline-2" src="images/design/material-online-2_v2.webp">
+					<p class="legenda">Click na imagem para ampliar</p>
+				</div>
+			</div><!-- container -->
+
+			<h3>Algumas aplicações da última logo criada</h3>
+			<div class="container">
+				<div>
+					<img class="imagem-ampliavel" alt="Imagem de duas filipetas frente verso com a arte criada" id="material-offline-1" src="images/design/vera-cruz-cartao_v2.webp">
+					<p class="legenda">Click na imagem para ampliar</p>
+				</div>
+
+				<div class="container-zoom">
+					<img class="imagem-ampliavel" alt="Imagem de um outdoor com a arte criada" id="material-offline-2" src="images/design/vera-cruz-fachada_v2.webp">
+					<p class="legenda">Click na imagem para ampliar</p>
+				</div>
+			</div><!-- container -->
+
+			<p class="legenda-zoom">Click na imagem para voltar para o site</p>
+			<p class="botao-fechar"><i class="fa-solid fa-circle-xmark fa-lg"></i></p>
+			<div class="overlay"></div>
+
+			<div class="clear"></div>
+		</section><!-- section-6 -->
+
+
+
+
+
+<!-- ======================================================================================================= -->
+<!-- ===================================== Section 8 ======================================================= -->
+<!-- ======================================================================================================= -->
+
+		<section class="section-8"> <!-- Jogos desenvolvidos section-8  -->
 			<h2>Jogos desenvolvidos</h2>
 
 			<div class="container">
@@ -298,13 +362,13 @@
 			</div><!-- container -->
 
 			<div class="clear"></div>
-		</section><!-- section-6 -->
+		</section><!-- section-8 -->
 
 <!-- ======================================================================================================= -->
 <!-- ======================================================================================================= -->
 <!-- ======================================================================================================= -->
 
-		<section class="section-5">
+		<section class="section-5"> <!-- Experiência no mercado -->
 			<h2>Experiência no mercado</h2>
 
 			<div class="container">
@@ -342,11 +406,13 @@
 			<div class="clear"></div>
 		</section><!-- section-5 -->
 		
-		<section class="section-7"> <!-- section-6 -->
+		<section class="section-7"> <!-- Contato -->
 
 			<div class="container">
-				<em class="fa fa-envelope"  style="font-size: 34px;"></em>
-				<p>fabricio.r.assis@gmail.com</p>
+				<a href="mailto:fabricio.r.assis@gmail.com" target="_blank" rel="noopener noreferrer">
+					<em class="fa fa-envelope"  style="font-size: 34px;"></em>
+					<p>fabricio.r.assis@gmail.com</p>
+				</a>
 			</div><!-- container -->
 
 			<div class="container">
@@ -372,16 +438,19 @@
 				</a>
 			 </div><!-- container -->
 
-		 <div class="clear"></div>
-		</section><!-- section-7 --> <!-- section-6 -->
+		 	<div class="clear"></div>
+		</section>
 
 		<div class="footer">
 			<p>Todos os direitos reservados</p>
 			<p>Fabricio Assis - Brasília - DF</p>
 		</div><!-- footer -->
 
-		<link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet"> -->
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"> -->
+
+		<script src="https://kit.fontawesome.com/bec82f77f4.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 		<script>
 			function playStop(name){
@@ -392,7 +461,40 @@
 					document.getElementById(name).src="images/gifs/"+name+"-thumb.webp";
 				}
 			}
-	</script>
+
+			// JQuery para trocar a classe e dar zoom nas imagens
+			$(document).ready(function() {
+				// Adiciona um ouvinte de evento de clique a todas as imagens com a classe "imagem-ampliavel"
+				$(".imagem-ampliavel").click(function() {
+					// Adiciona a classe "fullscreen" à imagem clicada
+					$(this).toggleClass("fullscreen");
+					// Exibe ou oculta o fundo preto semi-transparente
+					$(".overlay").toggle();
+					// Seleciona todas as legendas e as oculta
+					$(".legenda").toggle();
+					// Seleciona todas as legendas do zoom e as mostra
+					$(".legenda-zoom").toggle();
+					// Seleciona o botão fechar e mostra
+					$(".botao-fechar").toggle();
+				});
+
+				// Adiciona um ouvinte de evento de clique ao botão de fechar
+				$(".botao-fechar").click(function() {
+					// Remove a classe "fullscreen" da imagem
+					$(".imagem-ampliavel").removeClass("fullscreen");
+					// Exibe ou oculta o fundo preto semi-transparente
+					$(".overlay").toggle();
+					// Seleciona todas as legendas e as oculta
+					$(".legenda").toggle();
+					// Seleciona todas as legendas do zoom e as mostra
+					$(".legenda-zoom").toggle();
+					// Seleciona o botão fechar e mostra
+					$(".botao-fechar").toggle();
+				});
+			});
+		</script>
+
+	
 
 	</body>
 </html>
